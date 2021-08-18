@@ -27,7 +27,7 @@ This method is published in the manuscript "Endogenous (Lipid) / Exogenous (CBD)
 
 
 
-###Step I. Use VMD to write lipid-only PDB files (already aligned by protein backbone):
+### Step I. Use VMD to write lipid-only PDB files (already aligned by protein backbone):
 
 ```tcl
 #Set up a function for this purpose
@@ -55,7 +55,7 @@ write_lipids SAPI15
 
 
 
-#### Step II. Convert to EM map in ChimeraX and merge the maps
+### Step II. Convert to EM map in ChimeraX and merge the maps
 
 ```python
 # Take POPC lipid files as an example
