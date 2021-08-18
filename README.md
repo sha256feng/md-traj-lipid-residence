@@ -6,7 +6,9 @@ This method is published in the manuscript "Endogenous (Lipid) / Exogenous (CBD)
 
 **Required programs**: ChimeraX, VMD
 
-### Routine of analyzing lipid map on protein
+
+
+### Converting PDB coordinates to EM map
 
 1. Load each frame of lipid structure: 
 
@@ -25,9 +27,9 @@ This method is published in the manuscript "Endogenous (Lipid) / Exogenous (CBD)
 
 
 
-I. To get lipids structures for the system (already aligned):
+###Step I. Use VMD to write lipid-only PDB files (already aligned by protein backbone):
 
-```
+```tcl
 #Set up a function for this purpose
 proc write_lipids { resname } {
   set num [molinfo top get numframes]
@@ -51,10 +53,12 @@ write_lipids SAPI15
 
 ```
 
-#### In ChimeraX
 
-```
-# Convert the pdb to map
+
+#### Step II. Convert to EM map in ChimeraX and merge the maps
+
+```python
+# Take POPC lipid files as an example
 lipid = 'popc'
 for i in range(1, 524):
     print(f"open {lipid}-{i:03d}.pdb")
