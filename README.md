@@ -6,6 +6,7 @@ This method is published in the manuscript "Endogenous (Lipid) / Exogenous (CBD)
 
 **Required programs**: ChimeraX, VMD
 
+Automatic scripts in `chimerax-alllip.py`. 
 
 
 ### Converting PDB coordinates to EM map
