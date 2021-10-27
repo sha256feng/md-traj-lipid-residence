@@ -16,7 +16,7 @@ This method is published in the manuscript "Endogenous (Lipid) / Exogenous (CBD)
 
 2. Convert to mrc file in Chimera:  
 
-   `molmap #0 3`, here 3 is the resolution; 
+   `molmap #0 3`, here 3 is the resolution;   
    `volume #0.1 save chol-map-$d.mrc`;  
 
 3. Remove the structure and load the map:  
@@ -91,4 +91,4 @@ save {lipid}-merged.mrc #524
 
 
 
-Any questions? Contact shalltime@gmail.com (Shasha)
+Any questions? Contact shalltime@gmail.com, Shasha Feng
